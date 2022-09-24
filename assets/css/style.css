@@ -1,0 +1,54 @@
+html{
+    background-color: #faebd7;
+}
+#container{
+    font-family: 'Roboto', sans-serif;
+    color: #13135c;
+    height: 98vh;
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+}
+/* ----- zone gauche ----- */
+#choiceZone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-size: 3rem;
+}
+/* bouton */
+#choice{
+    width: 30vw;
+    font-size: 1.5rem;
+    padding: 10px;
+    border: solid #FCA44C 1px;
+    border-radius: 20px;
+    background-color: #FCA44C;
+    color: #13135c;
+    font-weight: bold;
+    box-shadow: 1px 4px 8px #13135c;
+    margin: 20px 0px 50px 0px;
+}
+#answer{
+    font-size: 1.7rem;
+}
+/* ----- zone droite ----- */
+#reminderZone{
+    margin-top: 2vh;
+    font-size: 1.5rem;
+}
+/* trait de soulignement décalé sous titre "Rappel" */
+.underline{
+    position: relative;
+}
+.underline::after{
+    content: '';
+    height: 34%;
+    position: absolute;
+    bottom: 5%;
+    left: 4%;
+    right: -4%;
+    background-color: #FCA44C;
+    z-index: -1;
+}
